@@ -165,10 +165,10 @@ module "postgresql" {
   backup_retention_period = 0
   backup_window           = "03:00-06:00"
   engine                  = "postgres"
-  engine_version          = "12.4"
+  engine_version          = "12.7"
   family                  = "postgres12"
   identifier              = "boundary"
-  instance_class          = "db.t2.micro"
+  instance_class          = "db.t3.micro"
   maintenance_window      = "Mon:00:00-Mon:03:00"
   major_engine_version    = "12"
   name                    = "boundary"
