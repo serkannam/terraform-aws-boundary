@@ -136,7 +136,7 @@ module "alb" {
     }
   ]
 
-  https_tcp_listeners = [
+  https_listeners = [
     {
       port     = 443
       protocol = "HTTPS"
