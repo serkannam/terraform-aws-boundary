@@ -130,8 +130,15 @@ module "alb" {
 
   http_tcp_listeners = [
     {
+      port     = 443
+      protocol = "HTTPS"
+      target_group_index = 0
+      certificate_arn    = "arn:aws:acm:us-east-1:857701518192:certificate/e3b07ef4-bbff-4c3b-ac30-0656bd8dc5cb"
+    },
+    {
       port     = 80
       protocol = "HTTP"
+      target_group_index = 0
     }
   ]
 
@@ -151,6 +158,8 @@ module "alb" {
 
   vpc_id = var.vpc_id
 }
+
+
 
 resource "random_password" "postgresql" {
   length  = 16
