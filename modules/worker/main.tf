@@ -87,7 +87,7 @@ module "workers" {
   min_size                = var.min_size
   security_groups         = [aws_security_group.worker.id]
   tags                    = var.tags
-  vpc_zone_identifier     = var.public_subnets
+  vpc_zone_identifier     = var.private_subnets
 
   write_files = [
     {
