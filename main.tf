@@ -77,7 +77,7 @@ module "workers" {
   kms_key_id             = module.controllers.kms_key_id
   max_size               = var.worker_max_size
   min_size               = var.worker_min_size
-  public_subnets         = local.public_subnets
+  private_subnets        = local.private_subnets
   security_group_id      = module.controllers.security_group_id
   tags                   = local.tags
   vpc_id                 = local.vpc_id

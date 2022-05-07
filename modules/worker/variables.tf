@@ -77,6 +77,10 @@ variable "public_subnets" {
   description = "List of public subnets"
   type        = list(string)
 }
+variable "private_subnets" {
+  description = "List of private subnets"
+  type        = list(string)
+}
 
 variable "security_group_id" {
   description = "The ID of the controller security group"
