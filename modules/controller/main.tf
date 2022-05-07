@@ -177,7 +177,7 @@ module "postgresql" {
   backup_retention_period = 0
   backup_window           = "03:00-06:00"
   engine                  = "postgres"
-  engine_version          = "12.7"
+  engine_version          = "12.8"
   family                  = "postgres12"
   identifier              = "boundary"
   instance_class          = "db.t3.micro"
