@@ -50,7 +50,7 @@ resource "aws_security_group" "worker" {
   }
 
   ingress {
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["10.225.0.0/16"]
     from_port   = 9202
     protocol    = "TCP"
     to_port     = 9202
