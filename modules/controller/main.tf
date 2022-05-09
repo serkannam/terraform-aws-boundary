@@ -324,7 +324,7 @@ resource "aws_security_group" "bastion" {
   }
 
   ingress {
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["131.226.211.231/32"]
     from_port   = 22
     protocol    = "TCP"
     to_port     = 22
